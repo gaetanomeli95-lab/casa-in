@@ -1,0 +1,1 @@
+Asset editoriali approvati per il sito Casa IN. Le immagini hero vengono utilizzate per la comunicazione principale; le foto reali dello showroom restano riservate alle sezioni di autenticità/showroom.
