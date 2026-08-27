@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #101010;
+  --ink2: #171717;
+  --paper: #f0eee9;
+  --paper2: #e6e2db;
+  --white: #fff;
+  --casa-red: #ef171c;
+  --casa-red-dark: #c60f14;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(239, 23, 28, 0.18);
+}
+
+.red-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--casa-red);
+  display: inline-block;
+}
