@@ -18,15 +18,15 @@ export default function Feature() {
           className="absolute inset-0"
         >
           <Image
-            src="/hero-01.png"
-            alt="Progetto cucina Casa IN"
+            src="/hero-casain-01.webp"
+            alt="Ambiente editoriale Casa IN ispirato allo showroom reale"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 60vw"
           />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/20" />
-        <div className="absolute left-6 bottom-6 md:left-8 md:bottom-8 border border-white/20 bg-black/20 backdrop-blur-sm px-4 py-3 text-[9px] font-bold tracking-[0.16em]">
+        <div className="absolute left-6 bottom-6 md:left-8 md:bottom-8 border border-white/20 bg-black/35 px-4 py-3 text-[9px] font-bold tracking-[0.16em]">
           DETTAGLI CHE CAMBIANO L&apos;INSIEME
         </div>
       </div>
