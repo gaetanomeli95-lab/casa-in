@@ -60,16 +60,16 @@ export default function Progettazione() {
               className="relative mt-12 h-[340px] md:h-[430px] overflow-hidden"
             >
               <Image
-                src="/showroom-kitchen.jpg"
-                alt="Progettazione e composizioni Casa IN"
+                src="/hero-casain-03.webp"
+                alt="Immagine editoriale Casa IN ispirata allo showroom di Carini"
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 45vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
-              <div className="absolute left-5 bottom-5 bg-white/92 backdrop-blur-sm px-5 py-4 max-w-[260px]">
-                <span className="text-[8px] font-extrabold tracking-[0.16em] text-casaRed">DAL VIVO</span>
-                <p className="font-serif text-lg leading-snug mt-1">Materiali, proporzioni e dettagli si capiscono meglio insieme.</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/32 via-transparent to-transparent" />
+              <div className="absolute left-5 bottom-5 bg-white/94 px-5 py-4 max-w-[280px] shadow-[0_10px_35px_rgba(0,0,0,.12)]">
+                <span className="text-[8px] font-extrabold tracking-[0.16em] text-casaRed">PROGETTO CASA IN</span>
+                <p className="font-serif text-lg leading-snug mt-1">Spazi, materiali e proporzioni pensati per funzionare insieme.</p>
               </div>
             </motion.div>
           </div>
