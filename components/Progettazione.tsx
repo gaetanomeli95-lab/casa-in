@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { steps } from "@/lib/data";
 
@@ -9,61 +10,96 @@ export default function Progettazione() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="progettazione" ref={ref} className="max-w-[1340px] mx-auto px-6 lg:px-10 py-28 lg:py-36">
-      <div className="grid lg:grid-cols-[0.95fr_1.05fr] gap-16 lg:gap-24 items-start">
-        <div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8 }}
-            className="text-[10px] font-extrabold tracking-[0.2em] uppercase flex items-center gap-3 mb-8"
-          >
-            <span className="text-casaRed">03</span> PROGETTAZIONE
-          </motion.div>
+    <section id="progettazione" ref={ref} className="bg-[#ebe6de] py-28 lg:py-36 overflow-hidden">
+      <div className="max-w-[1340px] mx-auto px-6 lg:px-10">
+        <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-14 lg:gap-24 items-start">
+          <div className="lg:sticky lg:top-28">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7 }}
+              className="text-[10px] font-extrabold tracking-[0.2em] uppercase flex items-center gap-3 mb-8"
+            >
+              <span className="text-casaRed">03</span> PROGETTAZIONE
+            </motion.div>
 
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-serif text-[clamp(40px,5.5vw,82px)] leading-[0.98] tracking-tight"
-          >
-            Prima di scegliere un mobile,
-            <br />
-            <em className="not-italic text-stone-500">progettiamo un modo di viverlo.</em>
-          </motion.h2>
-
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-8 max-w-[560px] text-[15px] leading-[1.8] text-stone-600"
-          >
-            Ti accompagniamo dalla prima idea alla scelta delle composizioni, con un percorso semplice e concreto.
-          </motion.p>
-        </div>
-
-        <div className="border-t border-stone-300">
-          {steps.map((step, i) => (
-            <motion.article
-              key={step.no}
+            <motion.h2
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.2 + i * 0.1 }}
-              className="grid grid-cols-[72px_1fr] gap-6 py-8 border-b border-stone-300"
+              transition={{ duration: 0.8, delay: 0.08 }}
+              className="font-serif text-[clamp(42px,5.2vw,78px)] leading-[0.97] tracking-tight"
             >
-              <span className="text-[10px] text-casaRed font-bold tracking-[0.12em] pt-1">
-                {step.no}
-              </span>
-              <div>
-                <h3 className="font-serif text-[28px] md:text-[30px] leading-tight mb-2">
-                  {step.title}
-                </h3>
-                <p className="text-[13px] leading-[1.65] text-stone-600">
-                  {step.text}
-                </p>
+              La differenza sta
+              <br />
+              <em className="not-italic text-stone-500">nel progetto.</em>
+            </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 24 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.15 }}
+              className="mt-8 max-w-[540px] text-[15px] leading-[1.8] text-stone-600"
+            >
+              Prima di scegliere finiture e modelli, partiamo da come vuoi vivere lo spazio. Misure, esigenze, stile e budget diventano un progetto concreto, leggibile e realizzabile.
+            </motion.p>
+
+            <motion.a
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.22 }}
+              href="#contatti"
+              className="inline-flex items-center gap-4 mt-9 text-[10px] font-extrabold uppercase tracking-[0.16em] border-b border-stone-500 pb-2 hover:text-casaRed hover:border-casaRed transition-colors"
+            >
+              Prenota un incontro <span>↗</span>
+            </motion.a>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.85, delay: 0.28 }}
+              className="relative mt-12 h-[340px] md:h-[430px] overflow-hidden"
+            >
+              <Image
+                src="/showroom-kitchen.jpg"
+                alt="Progettazione e composizioni Casa IN"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 45vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+              <div className="absolute left-5 bottom-5 bg-white/92 backdrop-blur-sm px-5 py-4 max-w-[260px]">
+                <span className="text-[8px] font-extrabold tracking-[0.16em] text-casaRed">DAL VIVO</span>
+                <p className="font-serif text-lg leading-snug mt-1">Materiali, proporzioni e dettagli si capiscono meglio insieme.</p>
               </div>
-            </motion.article>
-          ))}
+            </motion.div>
+          </div>
+
+          <div className="border-t border-stone-300">
+            {steps.map((step, i) => (
+              <motion.article
+                key={step.no}
+                initial={{ opacity: 0, y: 28 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.75, delay: 0.12 + i * 0.1 }}
+                className="group grid grid-cols-[64px_1fr] md:grid-cols-[84px_1fr_auto] gap-5 md:gap-8 py-8 md:py-10 border-b border-stone-300 items-start"
+              >
+                <span className="text-[10px] text-casaRed font-bold tracking-[0.16em] pt-2">
+                  {step.no}
+                </span>
+                <div>
+                  <h3 className="font-serif text-[30px] md:text-[36px] leading-tight mb-3 group-hover:text-casaRed transition-colors">
+                    {step.title}
+                  </h3>
+                  <p className="text-[13px] md:text-[14px] leading-[1.7] text-stone-600 max-w-xl">
+                    {step.text}
+                  </p>
+                </div>
+                <span className="hidden md:grid w-10 h-10 border border-stone-400 place-items-center text-sm text-stone-500 group-hover:bg-ink group-hover:text-white group-hover:border-ink transition-colors">
+                  {i + 1}
+                </span>
+              </motion.article>
+            ))}
+          </div>
         </div>
       </div>
     </section>
