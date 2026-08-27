@@ -18,22 +18,18 @@ export const brand = {
     "https://www.google.com/maps/search/?api=1&query=Casa+IN+Arredamenti+Carini+SS+113+Km+281.900",
 };
 
-export const navigation = [
-  { label: "Home", href: "/" },
-  { label: "Cucine", href: "/cucine" },
-  { label: "Camere", href: "/camere" },
-  { label: "Camerette", href: "/camerette" },
-  { label: "Living", href: "/living" },
-  { label: "Promozioni", href: "/promozioni" },
-  { label: "Progettazione", href: "/progettazione" },
-  { label: "Showroom", href: "/showroom" },
-  { label: "Contatti", href: "/contatti" },
+export const homeNavigation = [
+  { label: "Ambienti", href: "#ambienti" },
+  { label: "Progettazione", href: "#progettazione" },
+  { label: "Promozioni", href: "#promozioni" },
+  { label: "Showroom", href: "#showroom" },
+  { label: "Contatti", href: "#contatti" },
 ];
 
 export const heroSlides = [
-  { src: "/hero-01.png", alt: "Progetto cucina Casa IN Arredamenti" },
-  { src: "/hero-02.png", alt: "Soluzione living Casa IN Arredamenti" },
-  { src: "/hero-03.png", alt: "Showroom Casa IN Arredamenti" },
+  { src: "/hero-01.png", alt: "Cucina contemporanea Casa IN Arredamenti" },
+  { src: "/hero-02.png", alt: "Ambiente cucina e living Casa IN Arredamenti" },
+  { src: "/hero-03.png", alt: "Progetto cucina Casa IN Arredamenti" },
 ];
 
 export const rooms = [
@@ -90,7 +86,7 @@ export const promo = {
   headline: "Le occasioni dello showroom.",
   subline: "Da vedere dal vivo.",
   description:
-    "Una sezione dedicata alle composizioni, alle novità e alle offerte attive. Aggiornata costantemente con prodotti, prezzi e disponibilità reali.",
+    "Composizioni, novità e offerte attive: una selezione da scoprire online e poi toccare con mano nel nostro showroom.",
   image: "/promo-original.jpg",
   cta: "Chiedi le offerte disponibili",
 };
