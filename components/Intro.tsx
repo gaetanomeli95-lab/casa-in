@@ -51,21 +51,22 @@ export default function Intro() {
         initial={{ opacity: 0, y: 40 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9, delay: 0.3 }}
-        className="relative mt-20 h-[420px] lg:h-[520px] overflow-hidden"
+        className="relative mt-20 h-[420px] lg:h-[560px] overflow-hidden bg-ink"
       >
         <Image
-          src="/showroom-wide.jpg"
-          alt="Showroom Casa IN Arredamenti a Carini"
+          src="/hero-casain-03.webp"
+          alt="Interpretazione editoriale Casa IN ispirata al vero showroom"
           fill
-          className="object-cover object-[center_48%]"
+          className="object-cover object-center"
           sizes="(max-width: 1340px) 100vw, 1340px"
         />
-        <div className="absolute left-6 bottom-6 max-w-md bg-ink/90 text-white p-6 backdrop-blur-sm">
-          <span className="text-[10px] font-extrabold tracking-[0.18em] text-casaRed">
-            SHOWROOM REALE
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
+        <div className="absolute left-6 bottom-6 md:left-8 md:bottom-8 max-w-md bg-ink/92 text-white p-6 md:p-7">
+          <span className="text-[9px] font-extrabold tracking-[0.18em] text-casaRed">
+            ISPIRATO AL NOSTRO SHOWROOM
           </span>
-          <p className="font-serif text-lg leading-snug mt-2">
-            Un luogo dove vedere le composizioni dal vivo e progettare insieme.
+          <p className="font-serif text-lg md:text-xl leading-snug mt-2">
+            La realtà di Casa IN, raccontata con una fotografia pensata per il progetto digitale.
           </p>
         </div>
       </motion.div>
