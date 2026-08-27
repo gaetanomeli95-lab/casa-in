@@ -32,13 +32,13 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex h-full max-w-[1460px] items-center justify-between gap-6 px-5 sm:px-7 lg:px-10 xl:px-14">
-        <Link href="/" aria-label={brand.name} className="relative z-50 flex w-[138px] shrink-0 items-center lg:w-[164px]">
+        <Link href="/" aria-label={brand.name} className="relative z-50 flex w-[172px] shrink-0 items-center sm:w-[190px] lg:w-[214px]">
           <Image
-            src="/casain-logo.png"
+            src="/brand-horizontal-concept.webp"
             alt={brand.name}
-            width={190}
-            height={110}
-            className="h-auto w-full object-contain drop-shadow-[0_6px_18px_rgba(0,0,0,.35)]"
+            width={350}
+            height={105}
+            className="h-auto w-full object-contain drop-shadow-[0_6px_18px_rgba(0,0,0,.32)]"
             priority
           />
         </Link>
@@ -90,9 +90,20 @@ export default function Header() {
         }`}
       >
         <div className="mx-auto flex h-full max-w-xl flex-col">
-          <p className="mb-6 text-[9px] font-extrabold uppercase tracking-[0.22em] text-white/35">
-            Casa IN · Carini
-          </p>
+          <div className="mb-7 flex items-center gap-4">
+            <Image
+              src="/brand-icon-concept.webp"
+              alt="Casa IN"
+              width={177}
+              height={150}
+              className="h-14 w-auto object-contain"
+            />
+            <div>
+              <p className="text-[9px] font-extrabold uppercase tracking-[0.22em] text-white/70">Casa IN Arredamenti</p>
+              <p className="mt-1 text-[9px] uppercase tracking-[0.18em] text-white/35">Carini · Palermo</p>
+            </div>
+          </div>
+
           <nav className="flex flex-col border-t border-white/10" aria-label="Navigazione mobile">
             {homeNavigation.map((item, index) => (
               <Link
