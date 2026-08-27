@@ -26,10 +26,12 @@ export const homeNavigation = [
   { label: "Contatti", href: "#contatti" },
 ];
 
+// Immagini editoriali create appositamente per Casa IN partendo dal vero showroom.
+// Le fotografie originali restano materiale di riferimento e non vengono usate come hero.
 export const heroSlides = [
-  { src: "/hero-01.png", alt: "Cucina contemporanea Casa IN Arredamenti" },
-  { src: "/hero-02.png", alt: "Ambiente cucina e living Casa IN Arredamenti" },
-  { src: "/hero-03.png", alt: "Progetto cucina Casa IN Arredamenti" },
+  { src: "/hero-casain-01.webp", alt: "Ambiente Casa IN ispirato allo showroom di Carini" },
+  { src: "/hero-casain-02.webp", alt: "Cucina contemporanea Casa IN con accenti rossi" },
+  { src: "/hero-casain-03.webp", alt: "Open space Casa IN ispirato allo showroom reale" },
 ];
 
 export const rooms = [
@@ -39,7 +41,7 @@ export const rooms = [
     kicker: "IL CUORE DELLA CASA",
     title: "Cucine",
     description: "Composizioni moderne, funzionali e progettate sul tuo spazio.",
-    image: "/hero-03.png",
+    image: "/hero-casain-02.webp",
     large: true,
   },
   {
@@ -47,7 +49,8 @@ export const rooms = [
     no: "02",
     kicker: "RIPOSO & DESIGN",
     title: "Camere",
-    image: "/cat-bedroom.jpg",
+    description: "Una sezione pronta ad accogliere le immagini dedicate alla zona notte.",
+    dark: true,
   },
   {
     id: "camerette",
@@ -62,14 +65,14 @@ export const rooms = [
     no: "04",
     kicker: "COMFORT QUOTIDIANO",
     title: "Living & divani",
-    image: "/showroom-kitchen.jpg",
+    image: "/hero-casain-01.webp",
   },
   {
     id: "complementi",
     no: "05",
     kicker: "IL DETTAGLIO CHE COMPLETA",
     title: "Pareti attrezzate & complementi",
-    image: "/cat-complement.jpg",
+    image: "/hero-casain-03.webp",
     wide: true,
   },
 ];
