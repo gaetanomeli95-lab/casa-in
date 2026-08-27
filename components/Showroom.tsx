@@ -20,17 +20,17 @@ export default function Showroom() {
             className="absolute inset-0"
           >
             <Image
-              src="/showroom-wide.jpg"
-              alt="Showroom Casa IN Arredamenti a Carini"
+              src="/hero-casain-03.webp"
+              alt="Ambiente Casa IN ispirato allo showroom di Carini"
               fill
-              className="object-cover"
+              className="object-cover object-center"
               sizes="(max-width: 1024px) 100vw, 60vw"
             />
           </motion.div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/5 lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-black/25" />
-          <div className="absolute left-6 bottom-6 md:left-8 md:bottom-8 bg-black/45 backdrop-blur-sm border border-white/15 px-5 py-4 max-w-[300px]">
-            <span className="text-[8px] font-extrabold tracking-[0.16em] text-[#ff8b8e]">SHOWROOM REALE</span>
-            <p className="font-serif text-xl leading-snug mt-1">Vieni a vedere materiali, proporzioni e composizioni dal vivo.</p>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/5 lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-black/30" />
+          <div className="absolute left-6 bottom-6 md:left-8 md:bottom-8 bg-black/55 border border-white/15 px-5 py-4 max-w-[320px]">
+            <span className="text-[8px] font-extrabold tracking-[0.16em] text-[#ff8b8e]">CASA IN · CARINI</span>
+            <p className="font-serif text-xl leading-snug mt-1">Un&apos;immagine costruita sul carattere reale del nostro showroom.</p>
           </div>
         </div>
 
