@@ -92,10 +92,10 @@ export default function Header() {
         <div className="mx-auto flex h-full max-w-xl flex-col">
           <div className="mb-7 flex items-center gap-4">
             <Image
-              src="/brand-icon-concept.webp"
+              src="/casain-logo.png"
               alt="Casa IN"
-              width={177}
-              height={150}
+              width={190}
+              height={110}
               className="h-14 w-auto object-contain"
             />
             <div>
