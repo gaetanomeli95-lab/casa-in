@@ -21,17 +21,25 @@ export const brand = {
 export const homeNavigation = [
   { label: "Ambienti", href: "#ambienti" },
   { label: "Progettazione", href: "#progettazione" },
-  { label: "Promozioni", href: "#promozioni" },
   { label: "Showroom", href: "#showroom" },
   { label: "Contatti", href: "#contatti" },
 ];
 
-// Immagini editoriali create appositamente per Casa IN partendo dal vero showroom.
-// Le fotografie originali restano materiale di riferimento e non vengono usate come hero.
+// Queste sono le immagini editoriali approvate per la comunicazione principale.
+// Le foto reali dello showroom vengono usate esclusivamente dove serve autenticità.
 export const heroSlides = [
-  { src: "/hero-casain-01.webp", alt: "Ambiente Casa IN ispirato allo showroom di Carini" },
-  { src: "/hero-casain-02.webp", alt: "Cucina contemporanea Casa IN con accenti rossi" },
-  { src: "/hero-casain-03.webp", alt: "Open space Casa IN ispirato allo showroom reale" },
+  {
+    src: "/hero-01.png",
+    alt: "Cucina contemporanea Casa IN con tavolo e accenti rossi",
+  },
+  {
+    src: "/hero-02.png",
+    alt: "Open space Casa IN ispirato allo showroom di Carini",
+  },
+  {
+    src: "/hero-03.png",
+    alt: "Cucina Casa IN contemporanea in tonalità neutre",
+  },
 ];
 
 export const rooms = [
@@ -41,7 +49,7 @@ export const rooms = [
     kicker: "IL CUORE DELLA CASA",
     title: "Cucine",
     description: "Composizioni moderne, funzionali e progettate sul tuo spazio.",
-    image: "/hero-casain-02.webp",
+    image: "/hero-03.png",
     large: true,
   },
   {
@@ -49,7 +57,7 @@ export const rooms = [
     no: "02",
     kicker: "RIPOSO & DESIGN",
     title: "Camere",
-    description: "Una sezione pronta ad accogliere le immagini dedicate alla zona notte.",
+    description: "La zona notte merita immagini dedicate: nessun riempitivo fuori contesto.",
     dark: true,
   },
   {
@@ -65,14 +73,14 @@ export const rooms = [
     no: "04",
     kicker: "COMFORT QUOTIDIANO",
     title: "Living & divani",
-    image: "/hero-casain-01.webp",
+    image: "/hero-01.png",
   },
   {
     id: "complementi",
     no: "05",
     kicker: "IL DETTAGLIO CHE COMPLETA",
     title: "Pareti attrezzate & complementi",
-    image: "/hero-casain-03.webp",
+    image: "/hero-02.png",
     wide: true,
   },
 ];
@@ -83,13 +91,3 @@ export const steps = [
   { no: "03", title: "Scelta", text: "Materiali, finiture, colori e dettagli vengono definiti insieme." },
   { no: "04", title: "La tua Casa IN", text: "Il progetto diventa uno spazio reale, pronto da vivere." },
 ];
-
-export const promo = {
-  title: "In evidenza",
-  headline: "Le occasioni dello showroom.",
-  subline: "Da vedere dal vivo.",
-  description:
-    "Composizioni, novità e offerte attive: una selezione da scoprire online e poi toccare con mano nel nostro showroom.",
-  image: "/promo-original.jpg",
-  cta: "Chiedi le offerte disponibili",
-};
