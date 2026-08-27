@@ -4,6 +4,7 @@ import Intro from "@/components/Intro";
 import Ambienti from "@/components/Ambienti";
 import Progettazione from "@/components/Progettazione";
 import Feature from "@/components/Feature";
+import Promozioni from "@/components/Promozioni";
 import Showroom from "@/components/Showroom";
 import Contatti from "@/components/Contatti";
 import Footer from "@/components/Footer";
@@ -19,6 +20,7 @@ export default function Home() {
         <Ambienti />
         <Progettazione />
         <Feature />
+        <Promozioni />
         <Showroom />
         <Contatti />
       </main>

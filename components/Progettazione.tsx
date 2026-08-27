@@ -11,14 +11,14 @@ export default function Progettazione() {
 
   return (
     <section id="progettazione" ref={ref} className="bg-[#ebe6de] py-28 lg:py-36 overflow-hidden">
-      <div className="max-w-[1340px] mx-auto px-6 lg:px-10">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 xl:px-16">
         <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-14 lg:gap-24 items-start">
           <div className="lg:sticky lg:top-28">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7 }}
-              className="text-[10px] font-extrabold tracking-[0.2em] uppercase flex items-center gap-3 mb-8"
+              transition={{ duration: 0.75 }}
+              className="text-[10px] font-extrabold tracking-[0.2em] uppercase flex items-center gap-3 mb-10"
             >
               <span className="text-casaRed">03</span> PROGETTAZIONE
             </motion.div>
@@ -26,8 +26,8 @@ export default function Progettazione() {
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.08 }}
-              className="font-serif text-[clamp(42px,5.2vw,78px)] leading-[0.97] tracking-tight"
+              transition={{ duration: 0.85, delay: 0.08 }}
+              className="font-serif text-[clamp(42px,5.2vw,80px)] leading-[0.96] tracking-tight"
             >
               La differenza sta
               <br />
@@ -37,7 +37,7 @@ export default function Progettazione() {
             <motion.p
               initial={{ opacity: 0, y: 24 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.15 }}
+              transition={{ duration: 0.85, delay: 0.15 }}
               className="mt-8 max-w-[540px] text-[15px] leading-[1.8] text-stone-600"
             >
               Prima di scegliere finiture e modelli, partiamo da come vuoi vivere lo spazio. Misure, esigenze, stile e budget diventano un progetto concreto, leggibile e realizzabile.
@@ -46,7 +46,7 @@ export default function Progettazione() {
             <motion.a
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.22 }}
+              transition={{ duration: 0.85, delay: 0.22 }}
               href="#contatti"
               className="inline-flex items-center gap-4 mt-9 text-[10px] font-extrabold uppercase tracking-[0.16em] border-b border-stone-500 pb-2 hover:text-casaRed hover:border-casaRed transition-colors"
             >
@@ -56,18 +56,18 @@ export default function Progettazione() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.85, delay: 0.28 }}
+              transition={{ duration: 0.9, delay: 0.28 }}
               className="relative mt-12 h-[340px] md:h-[430px] overflow-hidden"
             >
               <Image
-                src="/hero-casain-03.webp"
-                alt="Immagine editoriale Casa IN ispirata allo showroom di Carini"
+                src="/showroom-kitchen.jpg"
+                alt="Cucina esposta nello showroom Casa IN di Carini"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 45vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/32 via-transparent to-transparent" />
-              <div className="absolute left-5 bottom-5 bg-white/94 px-5 py-4 max-w-[280px] shadow-[0_10px_35px_rgba(0,0,0,.12)]">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
+              <div className="absolute left-5 bottom-5 bg-white/95 px-5 py-4 max-w-[280px] shadow-[0_10px_35px_rgba(0,0,0,.1)]">
                 <span className="text-[8px] font-extrabold tracking-[0.16em] text-casaRed">PROGETTO CASA IN</span>
                 <p className="font-serif text-lg leading-snug mt-1">Spazi, materiali e proporzioni pensati per funzionare insieme.</p>
               </div>
@@ -80,7 +80,7 @@ export default function Progettazione() {
                 key={step.no}
                 initial={{ opacity: 0, y: 28 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.75, delay: 0.12 + i * 0.1 }}
+                transition={{ duration: 0.8, delay: 0.12 + i * 0.1 }}
                 className="group grid grid-cols-[64px_1fr] md:grid-cols-[84px_1fr_auto] gap-5 md:gap-8 py-8 md:py-10 border-b border-stone-300 items-start"
               >
                 <span className="text-[10px] text-casaRed font-bold tracking-[0.16em] pt-2">

@@ -3,16 +3,16 @@ import { brand } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0c0c0c] text-white px-6 lg:px-10 py-16 lg:py-20">
-      <div className="max-w-[1340px] mx-auto">
+    <footer className="bg-[#0c0c0c] text-white px-6 lg:px-12 xl:px-16 py-16 lg:py-20">
+      <div className="max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-[0.7fr_1.3fr] gap-12 lg:gap-20 items-end">
           <div>
             <Image
-              src="/brand-horizontal-concept.webp"
-              alt="Casa IN Arredamenti — versione orizzontale"
-              width={350}
-              height={105}
-              className="w-[260px] md:w-[310px] h-auto object-contain"
+              src="/casain-logo.png"
+              alt="Casa IN Arredamenti"
+              width={260}
+              height={120}
+              className="w-[240px] md:w-[290px] h-auto object-contain"
             />
             <p className="mt-7 text-sm leading-[1.8] text-white/50 max-w-sm">
               Arredamento e progettazione per costruire ambienti coerenti, funzionali e davvero tuoi.

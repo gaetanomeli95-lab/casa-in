@@ -21,12 +21,23 @@ export const brand = {
 export const homeNavigation = [
   { label: "Ambienti", href: "#ambienti" },
   { label: "Progettazione", href: "#progettazione" },
+  { label: "Promozioni", href: "#promozioni" },
   { label: "Showroom", href: "#showroom" },
   { label: "Contatti", href: "#contatti" },
 ];
 
-// Queste sono le immagini editoriali approvate per la comunicazione principale.
-// Le foto reali dello showroom vengono usate esclusivamente dove serve autenticità.
+export const fullNavigation = [
+  { label: "Home", href: "/" },
+  { label: "Cucine", href: "/cucine" },
+  { label: "Camere", href: "/camere" },
+  { label: "Camerette", href: "/camerette" },
+  { label: "Living", href: "/living" },
+  { label: "Promozioni", href: "/promozioni" },
+  { label: "Progettazione", href: "/progettazione" },
+  { label: "Showroom", href: "/showroom" },
+  { label: "Contatti", href: "/contatti" },
+];
+
 export const heroSlides = [
   {
     src: "/hero-01.png",
@@ -57,7 +68,8 @@ export const rooms = [
     no: "02",
     kicker: "RIPOSO & DESIGN",
     title: "Camere",
-    description: "La zona notte merita immagini dedicate: nessun riempitivo fuori contesto.",
+    description: "La zona notte come spazio di quiete, progettata per accogliere e organizzare.",
+    image: "/cat-bedroom.jpg",
     dark: true,
   },
   {
@@ -66,6 +78,7 @@ export const rooms = [
     kicker: "SPAZI CHE CRESCONO",
     title: "Camerette",
     description: "Soluzioni intelligenti per organizzare, studiare e vivere ogni centimetro.",
+    image: "/cat-kitchen2.jpg",
     dark: true,
   },
   {
@@ -73,14 +86,16 @@ export const rooms = [
     no: "04",
     kicker: "COMFORT QUOTIDIANO",
     title: "Living & divani",
-    image: "/hero-01.png",
+    description: "Divani, composizioni e soluzioni living per il comfort di tutti i giorni.",
+    image: "/showroom-kitchen.jpg",
   },
   {
     id: "complementi",
     no: "05",
     kicker: "IL DETTAGLIO CHE COMPLETA",
     title: "Pareti attrezzate & complementi",
-    image: "/hero-02.png",
+    description: "Il dettaglio che completa l'ambiente e gli dà carattere.",
+    image: "/cat-complement.jpg",
     wide: true,
   },
 ];
@@ -90,4 +105,28 @@ export const steps = [
   { no: "02", title: "Progetto", text: "Costruiamo una proposta d'arredo coerente e funzionale." },
   { no: "03", title: "Scelta", text: "Materiali, finiture, colori e dettagli vengono definiti insieme." },
   { no: "04", title: "La tua Casa IN", text: "Il progetto diventa uno spazio reale, pronto da vivere." },
+];
+
+export type Promotion = {
+  id: string;
+  name: string;
+  category: string;
+  image: string;
+  originalPrice?: string;
+  promoPrice?: string;
+  features?: string[];
+  cta?: string;
+  badge?: string;
+  expires?: string;
+};
+
+export const promotions: Promotion[] = [
+  {
+    id: "promo-001",
+    name: "Locandina promozionale",
+    category: "Offerte in corso",
+    image: "/promo-original.jpg",
+    cta: "Chiedi le offerte disponibili",
+    badge: "IN EVIDENZA",
+  },
 ];

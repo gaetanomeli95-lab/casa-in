@@ -40,7 +40,7 @@ export default function Contatti() {
 
   return (
     <section id="contatti" ref={ref} className="bg-[#ece8e0]">
-      <div className="mx-auto grid max-w-[1340px] gap-16 px-6 py-28 lg:grid-cols-[0.82fr_1.18fr] lg:gap-24 lg:px-10 lg:py-36">
+      <div className="mx-auto grid max-w-[1400px] gap-16 px-6 py-28 lg:grid-cols-[0.82fr_1.18fr] lg:gap-24 lg:px-12 xl:px-16 lg:py-36">
         <div>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
