@@ -8,11 +8,11 @@ export default function Footer() {
         <div className="grid lg:grid-cols-[0.7fr_1.3fr] gap-12 lg:gap-20 items-end">
           <div>
             <Image
-              src="/casain-logo.png"
-              alt={brand.name}
-              width={210}
-              height={120}
-              className="w-40 md:w-48 h-auto object-contain"
+              src="/brand-horizontal-concept.webp"
+              alt="Casa IN Arredamenti — versione orizzontale"
+              width={350}
+              height={105}
+              className="w-[260px] md:w-[310px] h-auto object-contain"
             />
             <p className="mt-7 text-sm leading-[1.8] text-white/50 max-w-sm">
               Arredamento e progettazione per costruire ambienti coerenti, funzionali e davvero tuoi.
